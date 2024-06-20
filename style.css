@@ -41,7 +41,18 @@ p {
 .navigation-links a {
   margin: 20px;
 }
-
+@media (max-width: 768px) {
+  .navigation-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+  }
+}
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
